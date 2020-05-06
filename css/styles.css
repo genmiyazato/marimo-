@@ -262,7 +262,7 @@ td:last-child {
   /* letter-spacing: 2.5px; */
   line-height: 40px;
   color: #24A2E2;
-  /* opacity: 1; */
+
 }
 
 .col-md-3 p:nth-child(3) {
@@ -306,7 +306,26 @@ td:last-child {
   height: 200px;
 }
 
+.col-md-9 P {
+  display: inline-block;
+  /* display: inline-block; 失敗*/
+  /* display: inline-flexbox; 失敗 */
+  /* 親要素に<div>つけたら、できた！ */
+  margin: 5px;
+}
 
+.col-md-9 p:nth-child(1) {
+  font-size: 24px;
+}
+
+.col-md-9 p:nth-child(2) {
+  font-size: 18px;
+  margin-left: 20px;
+}
+
+.col-md-9 p:nth-child(3) {
+  font-size: 16px;
+}
 
 .col-md-12 {
   margin-top: 30px;
